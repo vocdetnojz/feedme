@@ -14,23 +14,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        selectedFood.text = ""
-
-        decideButton.setOnClickListener {
-            if(!foodList.isEmpty()) {
-                val random = Random()
-                val randomFood = random.nextInt(foodList.count())
-                selectedFood.text = foodList[randomFood]
-            }
-        }
-
-        addButton.setOnClickListener {
-            if(!dishText.text.toString().isEmpty()) {
-                val newFood = dishText.text.toString()
-                foodList.add(newFood)
-                dishText.text.clear()
-            }
-        }
+//        selectedFood.text = ""
+//
+//        decideButton.setOnClickListener {
+//            if(!foodList.isEmpty()) {
+//                val random = Random()
+//                val randomFood = random.nextInt(foodList.count())
+//                selectedFood.text = foodList[randomFood]
+//            }
+//        }
+//
+//        addButton.setOnClickListener {
+//            if(!dishText.text.toString().isEmpty()) {
+//                val newFood = dishText.text.toString()
+//                foodList.add(newFood)
+//                dishText.text.clear()
+//            }
+//        }
 
     }
 
